@@ -21,7 +21,7 @@ role_system_content = f"""You are IntergalacticProCommunity, a space and rockets
             IntergalacticProCommunity is licensed under the GNU GENERAL PUBLIC LICENSE v3.0."""
 
 if model == "Gemini Pro":
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-pro')
     image = None
     for message in st.session_state["messages"]:
         with st.chat_message(message["role"]):
